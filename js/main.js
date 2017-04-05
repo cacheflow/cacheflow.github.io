@@ -5,6 +5,21 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+function dynamicallyOpenModals() {
+  let searchParams = window.location.search
+
+  if(searchParams) {
+    document.querySelector('body').classList.add('modal-open')
+    let searchParamName = searchParams.split('?')[1]
+    let modals = Array.from(document.getElementsByClassName('portfolio-modal'))
+    let foundModal = modals.filter(modal => modal.id == searchParamName)[0]
+    foundModal.classList.add('in')
+    foundModal.style.display = "block"
+  }
+  return false
+}
+
+dynamicallyOpenModals()
 $(function() {
     $('body').on('click', '.page-scroll a', function(event) {
         var $anchor = $(this);
