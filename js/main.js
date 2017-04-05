@@ -5,19 +5,39 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+let openedModal = {}
+
 function dynamicallyOpenModals() {
   let searchParams = window.location.search
 
   if(searchParams) {
-    document.querySelector('body').classList.add('modal-open')
     let searchParamName = searchParams.split('?')[1]
     let modals = Array.from(document.getElementsByClassName('portfolio-modal'))
     let foundModal = modals.filter(modal => modal.id == searchParamName)[0]
-    foundModal.classList.add('in')
-    foundModal.style.display = "block"
+    changeDomStylesToOpenModal(foundModal)
   }
   return false
 }
+
+function changeDomStylesToOpenModal(el) {
+  document.querySelector('body').classList.add('modal-open')
+  el.classList.add('in')
+  el.style.display = "block"
+  openedModal.modal = el
+}
+
+function closeModalviaClick() {
+  let el = openedModal.modal
+  let body = document.querySelector('body').classList
+  if ( Array.from(body).includes('modal-open') ) {
+      body.remove('modal-open')
+      el.classList.remove('in')
+      el.style.display = "none"
+  }
+}
+
+let modals = Array.from(document.getElementsByClassName('modal'))
+modals.forEach(modal => modal.addEventListener('click', closeModalviaClick))
 
 dynamicallyOpenModals()
 $(function() {
@@ -29,6 +49,7 @@ $(function() {
         event.preventDefault();
     });
 });
+
 
 // Floating label headings for the contact form
 $(function() {
