@@ -254,6 +254,15 @@ section.success a.active {
     margin: 0;
 }
 
+#open-source p {
+  color: #2c3e50;
+}
+
+#open-source p:hover {
+  color: #18bc9c;
+}
+
+
 #portfolio * {
     z-index: 2;
 }
