@@ -229,7 +229,16 @@ section.success a.active {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
+#portfolio img {
+    max-height: 100%;
+}
 
+@media(min-width: 768px) {
+    #portfolio img {
+        max-height: 115px;
+        width: 175px;
+    }
+}
 #portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
