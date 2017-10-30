@@ -235,8 +235,8 @@ section.success a.active {
 
 @media(min-width: 768px) {
     #portfolio img {
-        max-height: 115px;
-        width: 175px;
+        width: 160px;
+        height: 108px;
     }
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
