@@ -76,6 +76,27 @@
             </div>
             <div class="row">
               <div class="col-sm-3 portfolio-item">
+                  <a href="#mastodon" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="img/portfolio/mastodon.png" class="img-responsive" alt="">
+                  </a>
+                </div>
+              <div class="col-sm-3 portfolio-item">
+                  <a href="#ec" class="portfolio-link" data-toggle="modal">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="img/portfolio/uncle.png" class="img-responsive" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-3 portfolio-item">
                     <a href="#collab-creators-website" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -155,16 +176,6 @@
                       <img src="img/portfolio/beyond-the-beat.png" class="img-responsive" alt="">
                   </a>
               </div>
-              <div class="col-sm-3 portfolio-item">
-                  <a href="#ec" class="portfolio-link" data-toggle="modal">
-                      <div class="caption">
-                          <div class="caption-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="img/portfolio/uncle.png" class="img-responsive" alt="">
-                  </a>
-              </div>
               <div class="col-sm-3 col-md-3 portfolio-item">
                   <a href="#map-my-snaps" class="portfolio-link" data-toggle="modal">
                       <div class="caption">
@@ -189,6 +200,11 @@
         </div>
 
       <div class="row">
+      <div class="col-sm-3 portfolio-item">
+          <a href="https://github.com/tootsuite/mastodon/pull/5363">
+            <p>Mastodon </p>
+          </a>
+      </div>
       <div class="col-sm-3 portfolio-item">
           <a href="https://www.npmjs.com/package/youtube-video-to-frames">
             <p> Youtube-video-to-frames </p>
@@ -567,7 +583,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="collab-creators-website" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="collab-creators-website"    tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -593,26 +609,41 @@
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Collab Audio Library</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/audio-library.png" class="img-responsive img-centered" alt="">
-                            <p>Collab Audio Library allows our social media partners at Collab to view and download royalty-free music/sounds.</p>
-                            <ul class="list-inline item-details">
-                                <li>Technologies Used:
-                                    <strong><a href="#" style="text-decoration: none;">jQuery, Bootstrap, AudioMicro API, and Rails. </a>
-                                    </strong>
-                                </li>
-
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="audio-lib"    tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                  <h2>Collab Audio Library</h2>
+                  <hr class="star-primary">
+                  <img src="img/portfolio/audio-library.png" class="img-responsive img-centered" alt="">
+                  <p>Collab Audio Library allows our social media partners at Collab to view and download royalty-free music/sounds.</p>
+                  <ul class="list-inline item-details">
+                      <li>Technologies Used:
+                          <strong><a href="#" style="text-decoration: none;">jQuery, Bootstrap, AudioMicro API, and Rails. </a>
+                          </strong>
+                      </li>
+
+                  </ul>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="collab-docs" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -665,6 +696,37 @@
                                 </li>
                                 <li>
                                     <strong><a href="#" style="text-decoration: none;">React, ES6, Rails, Flexbox, and State Machines. </a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="mastodon" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mastodon</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/mastodon.png" class="img-responsive img-centered" alt="">
+                            <p>A federated distributed social network with over 90k users.</p>
+                            <ul class="list-inline item-details">
+                                <li>Technologies used:
+                                </li>
+                                <li>
+                                    <strong><a href="#" style="text-decoration: none;">React, Rails </a>
                                     </strong>
                                 </li>
                             </ul>
