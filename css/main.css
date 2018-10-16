@@ -122,9 +122,19 @@ header .intro-text .name {
     font-weight: 700;
 }
 
+
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+
+.open-source-img {
+  width: 100px;
+}
+
+.portfolio-item > p {
+  text-align: center;
 }
 
 @media(min-width:768px) {
@@ -280,6 +290,7 @@ section.success a.active {
 
 #open-source p {
   color: #2c3e50;
+  text-align: center;
 }
 
 #open-source p:hover {
