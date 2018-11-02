@@ -293,6 +293,10 @@ section.success a.active {
   text-align: center;
 }
 
+.open-source-img-link {
+  text-decoration: none; 
+}
+
 #open-source p:hover {
   color: #18bc9c;
 }
